@@ -1,0 +1,21 @@
+name: FactorioNativeIOS
+
+options:
+  deploymentTarget:
+    iOS: "16.0"
+
+targets:
+  FactorioNativeIOS:
+    type: application
+    platform: iOS
+
+    sources:
+      - path: Sources/FactorioNativeIOS
+
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.factorio.nativeios
+        INFOPLIST_KEY_CFBundleDisplayName: Factorio Native iOS
+        INFOPLIST_KEY_LSRequiresIPhoneOS: true
+        SWIFT_VERSION: 5.0
+        TARGETED_DEVICE_FAMILY: "1,2"
